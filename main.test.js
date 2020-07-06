@@ -1,6 +1,37 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+//Dont forget your parameter
+const addAll= function(newArray){
+  let num = 0
+  // let newArray= [] no need to make a new array
+  for(const sum of newArray ){// sum is your params[i]
+    num = num +sum // add your counter(num) plus the sum (params[i])
+  }return num
+}
+
+
+
+const countSpaces= function(spaces){
+  let count = 0
+  for(const num of spaces){
+    if(num=== ' '){
+      count= count + 1
+    }
+  }return count
+}// why doesnt count+= num work? because you arent incrimenting num when you use sum+= num
+
+
+
+const countTrues = function(str){
+let count = 0
+
+for (const num of str){
+  if (num === true){
+    count= count + 1
+  }
+}return count
+}
 
 
 
