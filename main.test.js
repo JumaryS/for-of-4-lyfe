@@ -4,12 +4,11 @@
 //Dont forget your parameter
 const addAll= function(newArray){
   let num = 0
-  // let newArray= [] no need to make a new array
+  // let newArray= [] on need to make a new array
   for(const sum of newArray ){// sum is your params[i]
     num = num +sum // add your counter(num) plus the sum (params[i])
   }return num
-}
-
+}  
 
 
 const countSpaces= function(spaces){
@@ -34,8 +33,62 @@ for (const num of str){
 }
 
 
+const makeFriendly = function(paragraph){
+  let result = ''
+for(const str of paragraph){
+if (str === "."){
+result = result + "!"
+}else{
+  result = result+ str
+}
+}return result
+
+}
+
+const cubeAll= function(cubed){
+  let num = []
+  for(const value of cubed){
+    num.push(value*value*value)
+  }return num
+}
+// why doesnt num.push(Math.cube(value)) wwork????
 
 
+const addNoises = function(noise){
+  let result = []
+  const dogs = [
+    'Fido',
+    'Rolph',
+    'Maisie',
+  ];
+  
+  const cats = [
+    'Garfield',
+    'Heathcliff',
+  ]
+  
+  const dinos = [
+    'Barnie',
+    'Sharp Tooth',
+  ]
+  for(const add of noise){
+
+  if (add===dogs){
+    result.push('Fido says "Woof!"')
+  }else if (add=== cats){
+    result.push('Garfield says "Meow!"')
+  }else if(add === dinos){
+    result.push('Sharp Tooth says "ROWR."')
+  }
+    // if (add.includes('Fido') || add.includes('Rolph')|| add.includes('Maisie')){
+      //   result.push(dogs)
+    // }else if (add.includes('Garfield') || add.includes('Heathcliff') ){
+    //   result.push(cats)
+    // }else if (add.includes('Barnie')|| add.includes('Sharp Tooth') ) {
+    //   result.push(dinos)
+    // }
+  }return result
+}
 
 
 /*********************************
